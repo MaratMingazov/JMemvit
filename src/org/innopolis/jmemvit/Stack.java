@@ -92,11 +92,11 @@ public class Stack extends ViewPart {
 			int lineNumber = DebugEventListener.getStackFrameLineNumber(frame);
 			subItem.setText(0, "line number : " + lineNumber);
 	
-			subItem = new TreeItem(item, SWT.LEFT);
-			subItem.setText(0, "StackPointer : ");				
+			//subItem = new TreeItem(item, SWT.LEFT);
+			//subItem.setText(0, "StackPointer : ");				
 			
-			subItem = new TreeItem(item, SWT.LEFT);
-			subItem.setText(0, "ReturnAddress : ");			
+			//subItem = new TreeItem(item, SWT.LEFT);
+			//subItem.setText(0, "ReturnAddress : ");			
 		
 			IVariable[] variables = DebugEventListener.getStackFrameVariables(frame);
 			if (variables != null){
